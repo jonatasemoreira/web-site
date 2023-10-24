@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200&display=swap" rel="stylesheet">
+
+    <!--Font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header id="header-central">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="#home">
+                        <i class="fas fa-home" aria-hidden="true"></i>
+                        Início
+                    </a>
+                </li>
+                <li><a href="#about">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Sobre Mim
+                </a></li>
+                <li><a href="#project">
+                    <i class="fa fa-archive" aria-hidden="true"></i>
+                    Projetos
+                </a></li>
+                <li><a href="#contact">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    Fale comigo
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!--Menu mobile-->
+        <button id="menu-mobile" class="menu-mobile">
+            <i id="menu-icon-mobile" class="fa fa-bars menu-icon-mobile" aria-hidden="true"></i>
+        </button>
+        
+        <!--Voltar ao topo-->
+        <button id="back-to-top" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        <section id="home">
+            <p>Home</p>
+        </section>
+        <section id="about">
+            <p>About me</p>
+        </section>
+        <section id="project">
+            <p>Projects</p>
+        </section>
+        <section id="contact">
+            <p>Contact</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Jonatas Elieser Moreira - 2023</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
