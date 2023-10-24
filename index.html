@@ -15,34 +15,36 @@
     <!--Font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+    <!--Scroll Reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
 </head>
 <body>
-    <header id="header-central">
-        <nav class="navbar">
-            <ul>
-                <li>
-                    <a href="#home">
-                        <i class="fas fa-home" aria-hidden="true"></i>
-                        Início
-                    </a>
-                </li>
-                <li><a href="#about">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    Sobre Mim
-                </a></li>
-                <li><a href="#project">
-                    <i class="fa fa-archive" aria-hidden="true"></i>
-                    Projetos
-                </a></li>
-                <li><a href="#contact">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    Fale comigo
-                </a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
-
+        <header id="header-central">
+            <nav class="navbar">
+                <ul>
+                    <li>
+                        <a href="#home">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                            Início
+                        </a>
+                    </li>
+                    <li><a href="#about">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        Sobre Mim
+                    </a></li>
+                    <li><a href="#project">
+                        <i class="fa fa-archive" aria-hidden="true"></i>
+                        Projetos
+                    </a></li>
+                    <li><a href="#contact">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        Fale comigo
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
         <!--Menu mobile-->
         <button id="menu-mobile" class="menu-mobile">
             <i id="menu-icon-mobile" class="fa fa-bars menu-icon-mobile" aria-hidden="true"></i>
@@ -52,11 +54,14 @@
         <button id="back-to-top" onclick="scrollToTop()">
             <i class="fas fa-arrow-up"></i>
           </button>
-        <section id="home">
+        <section id="home" class="home">
             <p>Home</p>
         </section>
         <section id="about">
             <p>About me</p>
+            <div id="author" class="author one-efect">
+                <img class="one-efect" src="./assets/img/author.jpg" alt="">
+            </div>
         </section>
         <section id="project">
             <p>Projects</p>
@@ -69,5 +74,7 @@
         <p>&copy; Jonatas Elieser Moreira - 2023</p>
     </footer>
     <script src="assets/js/script.js"></script>
+    <!--Projetos-->
+    <script src="./assets/data/api.js" type="module"></script>
 </body>
 </html>
