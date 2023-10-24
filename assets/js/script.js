@@ -85,3 +85,38 @@ for (let i = 0; i < menuItems.length; i++) {
 //scroll reveal
 ScrollReveal().reveal('.one-efect');
 
+const teste = document.getElementById('title-teste');
+teste.classList.add('texto-effect')
+
+teste.textContent = "";
+
+const escreverLetras = () => {
+  const texto = "Desenvolvedor Web FullStack";
+
+  let index = 0;
+  const interval = setInterval(() => {
+    teste.textContent += texto.charAt(index);
+    index++;
+    if (index === texto.length) {
+      clearInterval(interval);
+    }
+  }, 100);
+};
+
+escreverLetras();
+
+//funcao relogio
+function atualizarRelogio() {
+  const clock = document.getElementById('clock');
+  const dataAtual = new Date();
+
+  const horas = String(dataAtual.getHours()).padStart(2, '0');
+  const minutos = String(dataAtual.getMinutes()).padStart(2, '0');
+  const segundos = String(dataAtual.getSeconds()).padStart(2, '0');
+
+  const horaFormatada = `${horas}:${minutos}:${segundos}`;
+
+  clock.textContent = horaFormatada;
+}
+
+setInterval(atualizarRelogio, 1000);
