@@ -154,7 +154,48 @@ footer p {
     height: 40px;
     box-shadow: 1px 1px 5px silver;
     background-color: white;
+    cursor: pointer;
+    outline: 0;
+    border: 1px solid silver;
+    border-radius: 5px;
+}
+.container-skill {
+    display: flex;
+    margin-top: 2rem;
+}
+.container-skill div {
+    width: 50%;
+}
+.skill-front h2,
+.skill-back h2 {
+    margin-bottom: 1rem;
+}
+.container-skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 
+.skill-item {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 1rem;
+}
+
+.skill-bar {
+    width: 200px;
+    height: 20px;
+    background-color: #ddd;
+}
+
+.skill-progress {
+    height: 100%;
+    width: 0;
+    background-color: #4caf50;
+    transition: width 0.5s ease;
 }
 /*Responsivo*/
 @media(max-width:768px) {
@@ -166,7 +207,7 @@ footer p {
     .navbar {
         width: 100%;
         height: 100vh;
-        padding-top: 10rem;
+        padding-top: 7rem;
         background-color: white;
     }
     .navbar ul {

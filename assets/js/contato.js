@@ -27,22 +27,23 @@ enviarEmail.style.fontWeight = 'bold';
 const front_botao_envio = document.getElementById('btn-contact');
 
 const notificacao = document.getElementById('notificacao-falsa');
+const inputNome = document.querySelector('.input-nome-contact');
+const inputAssunto = document.querySelector('.input-assunto-contact');
 
 front_botao_envio.addEventListener('click', function() {
     if (verificarCampos()) {
         notificacao.appendChild(enviarEmail);
 
-        // Remover a mensagem após alguns segundos (tempo de simulação)
+        // Remover a mensagem após alguns segundos (tempo de simulação) e limpar os valores dos inputs
         setTimeout(function() {
             notificacao.removeChild(enviarEmail);
+            inputNome.value = '';
+            inputAssunto.value = '';
         }, 3000); // Tempo em milissegundos (neste exemplo, 3 segundos)
     }
 });
 
 function verificarCampos() {
-    const inputNome = document.querySelector('.input-nome-contact');
-    const inputAssunto = document.querySelector('.input-assunto-contact');
-
     if (!inputNome.value.trim()) {
         alert('Por favor, preencha o campo nome');
         return false;

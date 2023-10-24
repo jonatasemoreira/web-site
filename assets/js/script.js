@@ -2,21 +2,20 @@ const menu_hamburguer = document.getElementById('menu-mobile');
 const header_hamburguer = document.getElementById('header-central');
 const menu_icon_mobile = document.getElementById('menu-icon-mobile');
 
-menu_hamburguer.addEventListener('click', function abrirMenuMobile(){
-    if(header_hamburguer.style.display == "none") {
-        header_hamburguer.style.display = "block"
-        menu_icon_mobile.classList.remove("fa-bar");
-        menu_icon_mobile.classList.add("fa-times");
-        menu_hamburguer.classList.add('transition');
-    } else {
-        header_hamburguer.style.display = "none";
-        menu_icon_mobile.classList.remove("fa-times")
-        menu_icon_mobile.classList.add("fa-bar")
-        menu_hamburguer.classList.add('transition');
-    }
+menu_hamburguer.addEventListener('click', function() {
+  if (header_hamburguer.style.display === "none") {
+    header_hamburguer.style.display = "block";
+    menu_icon_mobile.classList.remove("fa-bar");
+    menu_icon_mobile.classList.add("fa-times");
+    menu_hamburguer.classList.add('transition');
+  } else {
+    header_hamburguer.style.display = "none";
+    menu_icon_mobile.classList.remove("fa-times");
+    menu_icon_mobile.classList.add("fa-bar");
+    menu_hamburguer.classList.add('transition');
+  }
 });
 
-//Fu…
 const menuHamburguer = document.getElementById('menu-mobile');
 const headerHamburguer = document.getElementById('header-central');
 const menuIconMobile = document.getElementById('menu-icon-mobile');
@@ -82,11 +81,11 @@ for (let i = 0; i < menuItems.length; i++) {
   menuItems[i].addEventListener('click', closeMenuMobile);
 }
 
-//scroll reveal
+// scroll reveal
 ScrollReveal().reveal('.one-efect');
 
 const teste = document.getElementById('title-teste');
-teste.classList.add('texto-effect')
+teste.classList.add('texto-effect');
 
 teste.textContent = "";
 
