@@ -15,7 +15,7 @@ contato_container_central.innerHTML +=
         </form>
         <div id="notificacao-falsa" class='notificacao-falsa'></div>
     </div>
-`
+`;
 
 
 //animação simulação de envio de email
@@ -40,6 +40,9 @@ front_botao_envio.addEventListener('click', function() {
             inputNome.value = '';
             inputAssunto.value = '';
         }, 3000); // Tempo em milissegundos (neste exemplo, 3 segundos)
+
+        // Faça o envio do e-mail aqui para o endereço desejado
+        // Pode usar um serviço externo como o EmailJS ou enviar via código de backend
     }
 });
 

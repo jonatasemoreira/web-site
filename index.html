@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfólio - 2023</title>
     <link rel="stylesheet" href="assets/css/style.css">
 
     <!--Google fonts-->
@@ -75,9 +75,8 @@
         <section id="about">
             <p>About me</p>
         </section>
-        <section id="project">
-            <p>Projects</p>
-            <div class="container-project" id="container-project"></div>
+        <section id="project" class="project-container-central">
+            <p class="title-projects">Projects</p>
         </section>
         <section id="contact">
             <p>Contact</p>
@@ -89,5 +88,12 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/contato.js"></script>
     <script src="assets/js/skills.js"></script>
+    <script src="assets/js/projects.js"></script>
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init('jonatas_elieser_moreira');
+        })();
+    </script>
 </body>
 </html>

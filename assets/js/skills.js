@@ -78,10 +78,10 @@ const mandarSkillFront = () => {
 
         const skill_barra = document.createElement('div');
         skill_barra.classList.add('skill-bar');
-        
+
         const skill_progress = document.createElement('div');
         skill_progress.classList.add('skill-progress');
-        skill_progress.style.width = skill.porcentagem;
+        skill_progress.style.width = '0%';
 
         skill_barra.appendChild(skill_progress);
 
@@ -89,6 +89,14 @@ const mandarSkillFront = () => {
         skill_div.appendChild(skill_barra);
 
         frontContainer.appendChild(skill_div);
+
+        setTimeout(() => {
+            skill_progress.style.width = skill.porcentagem;
+        }, 10);
+        
+        setTimeout(() => {
+            skill_progress.style.transition = 'width 1s';
+        }, 100);
     });
 };
 
@@ -106,10 +114,10 @@ const mandarSkillBack = () => {
 
         const skill_barra = document.createElement('div');
         skill_barra.classList.add('skill-bar');
-        
+
         const skill_progress = document.createElement('div');
         skill_progress.classList.add('skill-progress');
-        skill_progress.style.width = skill.porcentagem;
+        skill_progress.style.width = '0%';
 
         skill_barra.appendChild(skill_progress);
 
@@ -117,6 +125,14 @@ const mandarSkillBack = () => {
         skill_div.appendChild(skill_barra);
 
         backContainer.appendChild(skill_div);
+
+        setTimeout(() => {
+            skill_progress.style.width = skill.porcentagem;
+        }, 10);
+
+        setTimeout(() => {
+            skill_progress.style.transition = 'width 1s';
+        }, 100);
     });
 };
 
